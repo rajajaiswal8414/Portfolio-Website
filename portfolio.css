@@ -1,0 +1,374 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Times, "Times New Roman", Georgia, serif;
+    /* font-size: 30px; */
+}
+
+#body-header1{
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url("macbook_mouse.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 1.2rem;
+    /* position: sticky; */
+}
+
+/* Horizontal Lists */
+
+.horizontal-list1{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.horizontal-list1 li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.horizontal-list1 li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 2px 2px 0px;
+}
+
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* social-media-container */
+
+#social-media-container {
+    margin-top: 20vh;
+  }
+
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li a i{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+  }
+
+  /*Section Classes*/
+
+section{
+    /* height: 70vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n){
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+  }
+
+.section-heading{
+    /* width: auto; */
+    padding: 20px 10px 10px 20px;
+    font-weight: 500;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/*About Section*/
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30vh;
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    /* margin: auto; */
+    margin-top: -13vh;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para{
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    padding: 20px 0px 0px 20px;
+    width: 95%;
+    text-align: center;
+    color: rgb(96, 93, 93);
+    line-height: 40px;
+    font-size: 1.5rem;
+    /* margin: auto; */
+}
+
+/* Skills-Section */
+
+.skills-display{
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-progress{
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Common Margin Classes */
+
+.mb75px {
+    margin-bottom: 75px;
+  }
+
+/* setting background-color */
+
+.mb-blue {
+    background-color: #2857a4;
+  }
+
+.mb-green {
+    background-color: #2ac280;
+  }
+
+.mb-teal {
+    background-color: #0b8176;
+  }
+
+.mb-light-purple {
+    background-color: #93738c;
+  }
+
+.mb-grey{
+    background-color: #5c6573;
+}
+
+.mb-purple{
+    background-color: rgb(23, 124, 144);
+}
+
+.mb-light-orange{
+    background-color: rgb(235, 161, 64);
+}
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 70%;
+  }
+
+  .eighty-percent {
+    height: inherit;
+    width: 80%;
+  }
+
+  .fifty-percent {
+    height: inherit;
+    width: 50%;
+  }
+
+  .seventy-five-percent{
+    height: inherit;
+    width: 75%;
+  }
+
+  .sixty-percent{
+    height: inherit;
+    width: 60%;
+  }
+
+  .thirty-percent{
+    height: inherit;
+    width: 30%;
+  }
+
+
+/* Portfolio Section */
+
+#portfolio-container{
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-image-container{
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-image-container img{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+}
+
+.portfolio-details{
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    margin-bottom: -5px; 
+    padding: 40px; 
+}
+
+.portfolio-details p{
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74adc8;
+  }
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+  }
+
+
+/*common color classes */
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+  }
+
+/* Contact-section */
+
+.contact-heading span{
+	color:white;
+}
+
+#contact {
+	
+	background-image: linear-gradient(to top right, #2857a4, #403066);
+	background-attachment: fixed;
+	padding-bottom: 50px;
+}
+ 
+#contact {
+	display:flex;
+	flex-wrap :wrap;
+}
+
+
+.info-form {
+	display: inline-block;
+	width:45%;
+	height: auto;
+	vertical-align: top;
+}
+
+
+
+.info-form input, textarea, button {
+	font-size: 20px;
+	display: block;
+	background: none;
+	width:80%;
+	padding: 10px 10px 10px 10px ;
+	margin: auto;
+	margin-bottom : 25px;
+	border: hidden;	
+	border-bottom: 2px solid white;
+}
+
+.info-form button {
+	/* background-image: linear-gradient(to top right, blue, purple); */
+	overflow: hidden;
+	font-size : 90%;
+	border : 3px solid white;
+	color:white;
+	font-weight: 900;
+	width: 30%;
+}
+
+.info-me {
+    padding-top: 20px;
+    padding-left: 50px;
+	display: inline-block;
+	line-height: 30px;
+	width: 45%;
+}
+.info-me span{
+	line-height: 2rem;
+	margin-bottom : 2rem;
+}
+.color-white {
+	color:white;
+}
