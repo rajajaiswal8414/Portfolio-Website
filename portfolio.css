@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: Times, "Times New Roman", Georgia, serif;
     /* font-size: 30px; */
+    box-sizing: border-box;
 }
 
 #body-header1{
@@ -51,10 +52,17 @@
     text-align: center;
 }
 
+/* media queries for nav menu */
+
+@media screen and (max-width: 762px){
+    
+}
+
+
 /* social-media-container */
 
 #social-media-container {
-    margin-top: 20vh;
+    margin-top: 25vh;
   }
 
 #my-name{
@@ -113,7 +121,7 @@ section:nth-child(2n + 1) {
     height: auto;
     width: 100%;
     position: relative;
-    margin-bottom: 30vh;
+    margin-bottom: 25vh;
 }
 
 #my-image{
@@ -140,6 +148,7 @@ section:nth-child(2n + 1) {
     color: rgb(96, 93, 93);
     line-height: 40px;
     font-size: 1.5rem;
+    margin-top: 3rem;
     /* margin: auto; */
 }
 
@@ -355,6 +364,42 @@ section:nth-child(2n + 1) {
     width: 3rem;
   }
 
+/* media-queries for timeline */
+
+  @media screen and (max-width: 768px){
+    .timeline-divider{
+        left: 8%;
+    }
+
+    .timeline-box{
+        left: 12% !important;
+        width: 100%;
+    }
+
+    .timeline-box::after{
+        left: -5.6% !important;
+    }
+
+    .timeline{
+        right: 10%;
+    }
+  }
+
+ @media screen and (max-width: 572px){
+    .timeline-divider{
+        left: 8%;
+    }
+
+    .timeline-box{
+        left: 12% !important;
+        width: 100%;
+    }
+
+    .timeline-box::after{
+        left: -6.5% !important;
+    }
+  }
+
 /* Portfolio Section */
 
 #portfolio-container{
@@ -410,7 +455,6 @@ section:nth-child(2n + 1) {
     color: white;
   }
 
-
 /*common color classes */
 
 .text-highlight {
@@ -429,22 +473,16 @@ section:nth-child(2n + 1) {
 	background-image: linear-gradient(to top right, #2857a4, #403066);
 	background-attachment: fixed;
 	padding-bottom: 50px;
-}
- 
-#contact {
-	display:flex;
+    display:flex;
 	flex-wrap :wrap;
 }
-
 
 .info-form {
 	display: inline-block;
 	width:45%;
 	height: auto;
-	vertical-align: top;
+	vertical-align:top;
 }
-
-
 
 .info-form input, textarea, button {
 	font-size: 20px;
@@ -482,3 +520,22 @@ section:nth-child(2n + 1) {
 .color-white {
 	color:white;
 }
+
+.info-me h2{
+    margin-top: 20px;
+}
+/* media queries for contact section */
+
+@media screen and (max-width: 768px){
+    .contact-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .info-form, .info-me{
+        width: 90%;
+    }
+}
+
